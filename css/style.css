@@ -3,3 +3,27 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/** Nav**/
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(216, 221, 191, 0.742);
+}
+
+.navbar nav a img {
+  width: 100px;
+  height: 100px;
+}
+.navbar nav .nav-ul {
+  display: flex;
+  gap: 50px;
+  justify-content: space-around;
+}
+
+.navbar nav .nav-ul li {
+  list-style: none;
+}
