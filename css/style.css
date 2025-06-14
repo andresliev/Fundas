@@ -14,7 +14,7 @@
     rgba(237, 221, 83, 1) 100%
   );
 }
-div .img-logo {
+div a .img-logo {
   width: 60px;
   height: 60px;
 }
