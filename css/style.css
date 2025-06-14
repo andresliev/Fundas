@@ -34,13 +34,33 @@ div .img-logo {
   padding: 2px;
 }
 
+.section1-idx .div1-idx p {
+  font-size: 28px;
+}
+
 .section1-idx .div2-idx .btn-1 {
   background-color: #0071e3;
   border: #0071e3;
+  border-radius: 6.25rem;
 }
 
 .section1-idx .div2-idx .btn-2 {
   color: #0071e3;
   background-color: white;
   border: #0071e3 solid 1px;
+  border-radius: 6.25rem;
+}
+
+.section1-idx .div3-idx p {
+  font-size: 21px;
+  background: linear-gradient(
+    94deg,
+    rgb(0, 144, 247),
+    rgb(186, 98, 252),
+    rgb(242, 65, 107),
+    rgb(245, 86, 0)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 22px;
 }
