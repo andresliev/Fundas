@@ -82,7 +82,7 @@ div a .img-logo {
   justify-content: end;
   background-image: url(../assets/img/varios/corazones.jpg);
   background-size: cover;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .section2-idx h2 {
@@ -99,4 +99,48 @@ div a .img-logo {
   border: white;
   border-radius: 70px;
   margin-bottom: 30px;
+}
+
+/** Section3**/
+
+.section3-idx {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 38.8125rem);
+  width: 100%;
+  grid-template-areas:
+    "card1-idx card2-idx"
+    "card3-idx card4-idx"
+    "card5-idx card6-idx"
+    "card7-idx card7-idx";
+  gap: 5px;
+  margin-top: 5px;
+}
+
+.section3-idx .card1-idx {
+  grid-area: card1-idx;
+}
+.section3-idx .card2-idx {
+  grid-area: card2-idx;
+}
+.section3-idx .card3-idx {
+  grid-area: card3-idx;
+}
+.section3-idx .card4-idx {
+  grid-area: card4-idx;
+}
+.section3-idx .card5-idx {
+  grid-area: card5-idx;
+}
+.section3-idx .card6-idx {
+  grid-area: card6-idx;
+}
+.section3-idx .card7-idx {
+  grid-area: card7-idx;
+}
+
+.section3-idx div img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
 }
