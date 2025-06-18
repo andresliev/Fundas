@@ -106,13 +106,12 @@ div a .img-logo {
 .section3-idx {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(4, 38.8125rem);
+  grid-template-rows: repeat(3, 1fr);
   width: 100%;
   grid-template-areas:
     "card1-idx card2-idx"
     "card3-idx card4-idx"
-    "card5-idx card6-idx"
-    "card7-idx card7-idx";
+    "card5-idx card6-idx";
   gap: 5px;
   margin-top: 5px;
 }
@@ -134,9 +133,6 @@ div a .img-logo {
 }
 .section3-idx .card6-idx {
   grid-area: card6-idx;
-}
-.section3-idx .card7-idx {
-  grid-area: card7-idx;
 }
 
 .section3-idx div img {
