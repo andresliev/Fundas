@@ -5,29 +5,37 @@
 }
 
 /** Nav**/
-.container-fluid {
+.divnab {
   background: #2a7b9b;
   background: linear-gradient(
     90deg,
-    rgba(42, 123, 155, 1) 0%,
+    rgb(47, 127, 159) 0%,
     rgba(87, 199, 133, 1) 50%,
     rgba(237, 221, 83, 1) 100%
   );
 }
-div a .img-logo {
+nav .divnab div a .divnab__imglogo {
   width: 60px;
   height: 60px;
 }
 
+.divnab div ul li a:hover {
+  color: rgb(240, 247, 250);
+}
+
+.divnab div ul li a:focus {
+  color: rgb(61, 108, 154);
+}
+
 /** Main**/
-.section1-idx {
+.section1idx {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
 }
 
-.section1-idx .div1-idx {
+.section1idx__div1idx {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,10 +43,10 @@ div a .img-logo {
   margin: 10px;
 }
 
-.section1-idx .div1-idx p {
+.section1idx__div1idx p {
   font-size: 28px;
 }
-.section1-idx .div2-idx {
+.section1idx__div2idx {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,20 +54,8 @@ div a .img-logo {
   background-color: #f6f3e8;
   padding: 20px;
 }
-.section1-idx .div2-idx .btn-1 {
-  background-color: #0071e3;
-  border: #0071e3;
-  border-radius: 6.25rem;
-}
 
-.section1-idx .div2-idx .btn-2 {
-  color: #0071e3;
-  background-color: white;
-  border: #0071e3 solid 1px;
-  border-radius: 6.25rem;
-}
-
-.section1-idx .div2-idx p {
+.section1idx__div2idx p {
   font-size: 21px;
   background: linear-gradient(
     94deg,
@@ -71,10 +67,32 @@ div a .img-logo {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.section1idx__btn {
+  background-color: #0071e3;
+  border: #0071e3;
+  border-radius: 6.25rem;
+}
+
+.section1idx__btn--2 {
+  color: #0071e3;
+  background-color: white;
+  border: solid 1px;
+}
+
+.section1idx__btn:hover {
+  background-color: rgb(194, 189, 182);
+}
+
+.section1idx__btn--2:hover {
+  background-color: rgb(93, 165, 229);
+}
+.section1idx__div2idx img {
+  width: 350px;
+}
 
 /** Section 2 idx**/
 
-.section2-idx {
+.section2idx {
   height: 500px;
   display: flex;
   flex-direction: column;
@@ -85,15 +103,15 @@ div a .img-logo {
   margin-top: 5px;
 }
 
-.section2-idx h2 {
+.section2idx h2 {
   color: white;
 }
 
-.section2-idx p {
+.section2idx p {
   color: white;
 }
 
-.section2-idx .btnsec2 {
+.section2idx__btnsec2 {
   background-color: white;
   color: black;
   border: white;
@@ -103,40 +121,56 @@ div a .img-logo {
 
 /** Section3**/
 
-.section3-idx {
+.section3idx {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
   width: 100%;
   grid-template-areas:
-    "card1-idx card2-idx"
-    "card3-idx card4-idx"
-    "card5-idx card6-idx";
+    "section3idx__card1idx section3idx__card2idx"
+    "section3idx__card3idx section3idx__card4idx "
+    "section3idx__card5idx section3idx__card6idx  ";
   gap: 5px;
   margin-top: 5px;
 }
 
-.section3-idx .card1-idx {
-  grid-area: card1-idx;
+.section3idx__card1idx {
+  grid-area: section3idx__card1idx;
 }
-.section3-idx .card2-idx {
-  grid-area: card2-idx;
+.section3idx__card2idx {
+  grid-area: section3idx__card2idx;
 }
-.section3-idx .card3-idx {
-  grid-area: card3-idx;
+.section3idx__card3idx {
+  grid-area: section3idx__card3idx;
 }
-.section3-idx .card4-idx {
-  grid-area: card4-idx;
+.section3idx__card4idx {
+  grid-area: section3idx__card4idx;
 }
-.section3-idx .card5-idx {
-  grid-area: card5-idx;
+.section3idx__card5idx {
+  grid-area: section3idx__card5idx;
 }
-.section3-idx .card6-idx {
-  grid-area: card6-idx;
+.section3idx__card6idx {
+  grid-area: section3idx__card6idx;
 }
 
-.section3-idx div img {
+.section3idx div img {
   width: 100%;
   height: 100%;
   object-fit: fill;
+}
+
+/** Footer**/
+
+footer {
+  background-color: darkgrey;
+}
+
+.footer__logo a img {
+  width: 40px;
+  margin: 10px;
+  padding: 2px;
+}
+
+.footer__logo--fondo {
+  background-color: #2a7b9b;
 }
