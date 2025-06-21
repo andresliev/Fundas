@@ -7,22 +7,15 @@
 /** Nav**/
 .divnab {
   background: #2a7b9b;
-  background: linear-gradient(
-    90deg,
-    rgb(47, 127, 159) 0%,
-    rgba(87, 199, 133, 1) 50%,
-    rgba(237, 221, 83, 1) 100%
-  );
+  background: linear-gradient(90deg, rgb(47, 127, 159) 0%, rgb(87, 199, 133) 50%, rgb(237, 221, 83) 100%);
 }
-nav .divnab div a .divnab__imglogo {
+.divnab div a .divnab__imglogo {
   width: 60px;
   height: 60px;
 }
-
 .divnab div ul li a:hover {
   color: rgb(240, 247, 250);
 }
-
 .divnab div ul li a:focus {
   color: rgb(61, 108, 154);
 }
@@ -34,19 +27,17 @@ nav .divnab div a .divnab__imglogo {
   align-items: center;
   width: 100%;
 }
-
-.section1idx__div1idx {
+.section1idx .section1idx__div1idx {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 2px;
   margin: 10px;
 }
-
-.section1idx__div1idx p {
+.section1idx .section1idx__div1idx p {
   font-size: 28px;
 }
-.section1idx__div2idx {
+.section1idx .section1idx__div2idx {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -54,43 +45,31 @@ nav .divnab div a .divnab__imglogo {
   background-color: #f6f3e8;
   padding: 20px;
 }
-
-.section1idx__div2idx p {
+.section1idx .section1idx__div2idx p {
   font-size: 21px;
-  background: linear-gradient(
-    94deg,
-    rgb(0, 144, 247),
-    rgb(186, 98, 252),
-    rgb(242, 65, 107),
-    rgb(245, 86, 0)
-  );
+  background: linear-gradient(94deg, rgb(0, 144, 247), rgb(186, 98, 252), rgb(242, 65, 107), rgb(245, 86, 0));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.section1idx__btn {
+.section1idx .section1idx__div2idx .section1idx__div2idx__btn {
   background-color: #0071e3;
   border: #0071e3;
   border-radius: 6.25rem;
 }
-
-.section1idx__btn--2 {
+.section1idx .section1idx__div2idx .section1idx__div2idx__btn--2 {
   color: #0071e3;
   background-color: white;
   border: solid 1px;
 }
-
-.section1idx__btn:hover {
+.section1idx .section1idx__div2idx .section1idx__div2idx__btn:hover {
   background-color: rgb(194, 189, 182);
 }
-
-.section1idx__btn--2:hover {
+.section1idx .section1idx__div2idx .section1idx__div2idx__btn--2:hover {
   background-color: rgb(93, 165, 229);
 }
-.section1idx__div2idx img {
+.section1idx .section1idx__div2idx img {
   width: 350px;
 }
-
-/** Section 2 idx**/
 
 .section2idx {
   height: 500px;
@@ -102,16 +81,13 @@ nav .divnab div a .divnab__imglogo {
   background-size: cover;
   margin-top: 5px;
 }
-
 .section2idx h2 {
   color: white;
 }
-
 .section2idx p {
   color: white;
 }
-
-.section2idx__btnsec2 {
+.section2idx .section2idx__btnsec2 {
   background-color: white;
   color: black;
   border: white;
@@ -119,58 +95,49 @@ nav .divnab div a .divnab__imglogo {
   margin-bottom: 30px;
 }
 
-/** Section3**/
-
 .section3idx {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
   width: 100%;
-  grid-template-areas:
-    "section3idx__card1idx section3idx__card2idx"
-    "section3idx__card3idx section3idx__card4idx "
-    "section3idx__card5idx section3idx__card6idx  ";
+  grid-template-areas: "section3idx__card1idx section3idx__card2idx" "section3idx__card3idx section3idx__card4idx " "section3idx__card5idx section3idx__card6idx  ";
   gap: 5px;
   margin-top: 5px;
 }
-
-.section3idx__card1idx {
+.section3idx .section3idx__card1idx {
   grid-area: section3idx__card1idx;
 }
-.section3idx__card2idx {
+.section3idx .section3idx__card2idx {
   grid-area: section3idx__card2idx;
 }
-.section3idx__card3idx {
+.section3idx .section3idx__card3idx {
   grid-area: section3idx__card3idx;
 }
-.section3idx__card4idx {
+.section3idx .section3idx__card4idx {
   grid-area: section3idx__card4idx;
 }
-.section3idx__card5idx {
+.section3idx .section3idx__card5idx {
   grid-area: section3idx__card5idx;
 }
-.section3idx__card6idx {
+.section3idx .section3idx__card6idx {
   grid-area: section3idx__card6idx;
 }
-
 .section3idx div img {
   width: 100%;
   height: 100%;
   object-fit: fill;
 }
 
-/** Footer**/
-
 footer {
   background-color: darkgrey;
 }
-
-.footer__logo a img {
+footer div .footer__logo a img {
   width: 40px;
   margin: 10px;
   padding: 2px;
 }
-
-.footer__logo--fondo {
+footer div .footer__logo--fondo {
   background-color: #2a7b9b;
 }
+
+/*# sourceMappingURL=style.css.map */
