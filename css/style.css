@@ -4,9 +4,6 @@
   box-sizing: border-box;
 }
 
-/** VARIABLES**/
-/** Mapas**/
-/** Nav**/
 .divnab {
   background: #2a7b9b;
   background: linear-gradient(90deg, rgb(47, 127, 159) 0%, rgb(87, 199, 133) 50%, rgb(237, 221, 83) 100%);
@@ -22,7 +19,6 @@
   color: rgb(61, 108, 154);
 }
 
-/** Main**/
 .section1idx {
   display: flex;
   flex-direction: column;
@@ -49,9 +45,7 @@
 }
 .section1idx .section1idx__div2idx p {
   font-size: 21px;
-  background: linear-gradient(94deg, rgb(0, 144, 247), rgb(186, 98, 252), rgb(242, 65, 107), rgb(245, 86, 0));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: rgb(235, 19, 55);
 }
 .section1idx .section1idx__div2idx .section1idx__div2idx__btn {
   background-color: #0071e3;

@@ -1,0 +1,116 @@
+.section1idx {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+
+  .section1idx__div1idx {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2px;
+    margin: 10px;
+    p {
+      font-size: 28px;
+    }
+  }
+
+  .section1idx__div2idx {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #f6f3e8;
+    padding: 20px;
+
+    p {
+      font-size: 21px;
+      color: rgb(235, 19, 55);
+    }
+    .section1idx__div2idx__btn {
+      background-color: #0071e3;
+      border: #0071e3;
+      border-radius: 6.25rem;
+    }
+
+    .section1idx__div2idx__btn--2 {
+      color: #0071e3;
+      background-color: white;
+      border: solid 1px;
+    }
+    .section1idx__div2idx__btn:hover {
+      background-color: rgb(194, 189, 182);
+    }
+
+    .section1idx__div2idx__btn--2:hover {
+      background-color: rgb(93, 165, 229);
+    }
+
+    img {
+      width: 350px;
+    }
+  }
+}
+
+.section2idx {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  background-image: url(../assets/img/varios/corazones.jpg);
+  background-size: cover;
+  margin-top: 5px;
+
+  h2 {
+    color: white;
+  }
+  p {
+    color: white;
+  }
+  .section2idx__btnsec2 {
+    background-color: white;
+    color: black;
+    border: white;
+    border-radius: 70px;
+    margin-bottom: 30px;
+  }
+}
+
+.section3idx {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  width: 100%;
+  grid-template-areas:
+    "section3idx__card1idx section3idx__card2idx"
+    "section3idx__card3idx section3idx__card4idx "
+    "section3idx__card5idx section3idx__card6idx  ";
+  gap: 5px;
+  margin-top: 5px;
+
+  .section3idx__card1idx {
+    grid-area: section3idx__card1idx;
+  }
+  .section3idx__card2idx {
+    grid-area: section3idx__card2idx;
+  }
+  .section3idx__card3idx {
+    grid-area: section3idx__card3idx;
+  }
+  .section3idx__card4idx {
+    grid-area: section3idx__card4idx;
+  }
+  .section3idx__card5idx {
+    grid-area: section3idx__card5idx;
+  }
+  .section3idx__card6idx {
+    grid-area: section3idx__card6idx;
+  }
+
+  div img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+}

@@ -1,0 +1,20 @@
+.divnab {
+  background: #2a7b9b;
+  background: linear-gradient(
+    90deg,
+    rgb(47, 127, 159) 0%,
+
+    rgba(87, 199, 133, 1) 50%,
+    rgba(237, 221, 83, 1) 100%
+  );
+  div a .divnab__imglogo {
+    width: 60px;
+    height: 60px;
+  }
+  div ul li a:hover {
+    color: rgb(240, 247, 250);
+  }
+  div ul li a:focus {
+    color: rgb(61, 108, 154);
+  }
+}
