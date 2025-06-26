@@ -4,12 +4,21 @@
   box-sizing: border-box;
 }
 
+/** VARIABLES**/
+$color-footer: darkgrey;
+/** Mapas**/
+$color: (
+  color1: red,
+  color2: black,
+  color3: white,
+);
 /** Nav**/
 .divnab {
   background: #2a7b9b;
   background: linear-gradient(
     90deg,
     rgb(47, 127, 159) 0%,
+
     rgba(87, 199, 133, 1) 50%,
     rgba(237, 221, 83, 1) 100%
   );
@@ -153,7 +162,7 @@
 }
 
 footer {
-  background-color: darkgrey;
+  background-color: $color-footer;
 
   div {
     .footer__logo a img {
