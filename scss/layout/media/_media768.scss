@@ -1,0 +1,23 @@
+@media (max-width: 768px) {
+  .section1idx {
+    .section1idx__div2idx {
+      img {
+        width: 200px;
+      }
+    }
+  }
+
+  .section3idx {
+    @include flex(column, none, none, none);
+
+    div {
+      margin-left: 5px;
+      margin-right: 5px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+      }
+    }
+  }
+}

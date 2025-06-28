@@ -1,0 +1,12 @@
+@mixin flex($direction, $align, $justify, $gap) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align;
+  justify-content: $justify;
+  gap: $gap;
+}
+
+@mixin medidas($height, $width) {
+  height: $height;
+  width: $width;
+}

@@ -1,22 +1,16 @@
 .cards {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
+  @include flex(row, center, center, 10px);
   padding: 0.625rem;
   .cards__card {
-    height: 500px;
-    width: 500px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex(column, center, center, 2px);
+    @include medidas(500px, 500px);
     background-color: aliceblue;
     border-radius: 10px;
     .card__titulo {
       text-align: center;
     }
     .card__img {
-      width: 250px;
-      height: 250px;
+      @include medidas(250px, 250px);
       border-radius: 10px;
       margin: 20px;
     }
@@ -25,6 +19,31 @@
       text-align: center;
     }
     .card__btn {
+      background-color: darkgreen;
+    }
+  }
+}
+
+.cards1 {
+  @extend .cards;
+  .cards1__card1 {
+    @include flex(column, center, center, 2px);
+    @include medidas(500px, 500px);
+    background-color: aliceblue;
+    border-radius: 10px;
+    .card1__titulo1 {
+      text-align: center;
+    }
+    .card1__img1 {
+      @include medidas(250px, 250px);
+      border-radius: 10px;
+      margin: 20px;
+    }
+    .card1__parrafo1 {
+      color: green;
+      text-align: center;
+    }
+    .card1__btn1 {
       background-color: darkgreen;
     }
   }

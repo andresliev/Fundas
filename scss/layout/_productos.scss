@@ -1,0 +1,8 @@
+.h1 {
+  text-align: center;
+  background-color: rgba(176, 243, 243, 0.459);
+}
+.h2 {
+  @extend .h1;
+  background-color: rgba(189, 225, 227, 0.237);
+}

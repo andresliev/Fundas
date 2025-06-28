@@ -1,13 +1,9 @@
 .section1idx {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flex(column, center, none, 0.125rem);
   width: 100%;
 
   .section1idx__div1idx {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex(column, center, none, none);
     padding: 2px;
     margin: 10px;
     p {
@@ -16,16 +12,13 @@
   }
 
   .section1idx__div2idx {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+    @extend .section1idx;
     background-color: #f6f3e8;
     padding: 20px;
 
     p {
       font-size: 21px;
-      color: rgb(235, 19, 55);
+      color: rgb(255, 192, 203);
     }
     .section1idx__div2idx__btn {
       background-color: #0071e3;
@@ -53,10 +46,8 @@
 }
 
 .section2idx {
+  @extend.section1idx;
   height: 500px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: end;
   background-image: url(../assets/img/varios/corazones.jpg);
   background-size: cover;
@@ -74,6 +65,9 @@
     border: white;
     border-radius: 70px;
     margin-bottom: 30px;
+  }
+  .section2idx__btnsec2:hover {
+    background-color: burlywood;
   }
 }
 
